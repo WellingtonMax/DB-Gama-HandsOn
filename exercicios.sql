@@ -17,7 +17,13 @@ select departamento.nome as 'Nome do Departamento', count(produto.codigo) as 'Qu
     
 
 -- Exercicio 7: Mostre os dados dos pedidos, incluindo nomes dos clientes e nomes dos produtos que foram vendidos
-
+select cliente.nome as 'Nome dos clientes' , produto.nome 'Nomes dos produtos',
+ pedido.data_pedido as 'Data do pedido' , pedido.valor_bruto as 'Valor bruto',
+ pedido.desconto as 'Desconto' , pedido.valor_final as 'Valor final' , 
+ pedido.numero as 'Número do pedido', item_pedido.quantidade as 'Quantidade' 
+ from pedido inner join cliente on cliente.id = pedido.cliente_id 
+ inner join item_pedido  on item_pedido.pedido_numero = pedido.numero 
+ inner join produto  on item_pedido.produto_codigo = produto.codigo;
 
 -- Exercicio 8: Mostre quantos pedidos foram feitos por mês no ano de 2022 (caso você tenha registros neste ano, senão escolha um ano que você tenha cadastrado 
 
