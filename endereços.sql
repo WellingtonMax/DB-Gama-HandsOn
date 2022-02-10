@@ -1,30 +1,30 @@
--- CREATE TABLE endereco(
+CREATE TABLE endereco(
 
--- num_seq    INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+num_seq    INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
 
--- tipo       VARCHAR(5) NOT NULL, 
+tipo       VARCHAR(5) NOT NULL, 
 
--- logradouro VARCHAR(45) NOT NULL, 
+logradouro VARCHAR(45) NOT NULL, 
 
--- numero     INTEGER, 
+numero     INTEGER, 
 
--- complemento VARCHAR(20), 
+complemento VARCHAR(20), 
 
--- bairro     VARCHAR(30), 
+bairro     VARCHAR(30), 
 
--- cidade     VARCHAR(50),
+cidade     VARCHAR(50),
 
---     estado     VARCHAR(2), 
+    estado     VARCHAR(2), 
 
--- cep        VARCHAR(10), 
+cep        VARCHAR(10), 
 
--- cliente_id INTEGER NOT NULL,
+cliente_id INTEGER NOT NULL,
 
--- CONSTRAINT endereco_cliente FOREIGN KEY 
+CONSTRAINT endereco_cliente FOREIGN KEY 
 
--- (cliente_id) REFERENCES cliente(id)
+(cliente_id) REFERENCES cliente(id)
 
--- );
+);
 
 
 INSERT INTO endereco VALUES (NULL, 'Av', 'Rua Beija Flor', 3586, 'Arniqueiras', 'centro', 'Rio de Janeiro', 'RJ','68952-147',  1);
@@ -49,6 +49,6 @@ INSERT INTO endereco VALUES (NULL, 'Rua', 'Rua Oliveira', 246, 'Anbona', 'Impera
 INSERT INTO endereco VALUES (NULL, 'Av', 'Rua Ancas', 338, 'Santa Sebastina', 'São Carlos', 'São Paulo','SP', '41256-896',  20);
 INSERT INTO endereco VALUES (NULL, 'Av', 'Rua Polvina', 4441, 'São Jorge', 'Criciúma', 'Santa Catarina','SC','74528-335',  21);
 INSERT INTO endereco VALUES (NULL, 'Av', 'Rua Polvina', 4441, 'São Jorge', 'Criciúma', 'Santa Catarina', 'SC','74528-335',  21);
-INSERT INTO endereco VALUES (NULL, 'Avenida', 'Rua Polvina', 4441, 'São Jorge', 'Criciúma', 'Santa Catarina','SC', '74528-335',  21);
+INSERT INTO endereco VALUES (NULL, 'Av', 'Rua Polvina', 4441, 'São Jorge', 'Criciúma', 'Santa Catarina','SC', '74528-335',  21);
 INSERT INTO endereco VALUES (NULL, 'Rua', 'Rua Oliveira', 246, 'Anbona', 'Imperatriz', 'Maranhão','MA', '69850-274',  19);
 INSERT INTO endereco VALUES (NULL, 'Rua', 'Rua Dupla Sacada', 923, 'Baiacu', 'Itajaí', 'Santa Catarina','SC', '36582-596',  25);

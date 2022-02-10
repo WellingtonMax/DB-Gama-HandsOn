@@ -1,3 +1,18 @@
+CREATE TABLE cliente(
+
+   id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+
+   nome VARCHAR(100) NOT NULL, 
+
+   email VARCHAR(70) NOT NULL UNIQUE, 
+
+   senha VARCHAR(20) NOT NULL, 
+
+   cpf VARCHAR(15) NOT NULL UNIQUE
+
+);
+
+
 INSERT INTO cliente VALUES 
 (null, "Adriano Ribeiro Costa", "adriribeco@gmail.com" , "adricoribe1" , 11111111111),
 (null, "Allana Lohanne", "alanne@gmail.com" , "allana221" , 22222222222),

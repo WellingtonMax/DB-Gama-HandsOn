@@ -50,7 +50,7 @@ INSERT INTO produto VALUES
 INSERT INTO produto VALUES
     (null, 'Iphone 13', 'Apple Iphone 13 128gb ', 6900, 4, 'iphone-13.png',4),    
     (null, 'Iphone 12', 'Apple Iphone 12 128gb ', 5500, 5, 'iphone-12.png',4),    
-    (null, 'Iphone 11', 'Apple Iphone 11 64gb ', 4000, 2 'iphone-11.png',4),    
+    (null, 'Iphone 11', 'Apple Iphone 11 64gb ', 4000, 2 ,'iphone-11.png',4),    
     (null, 'Samsung Galaxy A32', 'Smartphone Samsung Galaxy A32 128gb', 1400, 5, 'samsung-a32.png',4),    
     (null, 'Samsung Galaxy A52 128gb', 'Smartphone Samsung Galaxy A52', 1900, 1, 'samsung-a52.png',4),    
     (null, 'Samsung Galaxy A12 64gb', 'Smartphone Samsung Galaxy A12', 1000, 3, 'samsung-a12.png',4),    
