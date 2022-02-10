@@ -1,5 +1,5 @@
 -- Exercicio 2: Quantos clientes estão cadastrados na sua base? 
-
+select count(nome) as 'clientes' from cliente;
 
 -- Exercicio 3: Qual o produto mais caro?
 select preco, nome from produto where preco = (select max(preco) from produto);
