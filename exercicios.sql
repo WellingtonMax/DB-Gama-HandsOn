@@ -1,3 +1,7 @@
+-- Exercício 1: Este exercício é livre para você inserir dados nas tabelas. Adicione vários dados em todas as tabelas. 
+-- Crie vários clientes, com vários endereços. Insira muitos produtos em vários departamentos. 
+-- Crie pedidos em várias datas com meses diferentes (serão necessários para os próximos exercícios).
+
 -- Exercicio 2: Quantos clientes estão cadastrados na sua base? 
 select count(nome) as 'clientes' from cliente;
 
@@ -26,10 +30,12 @@ select cliente.nome as 'Nome dos clientes' , produto.nome 'Nomes dos produtos',
  inner join produto  on item_pedido.produto_codigo = produto.codigo;
 
 -- Exercicio 8: Mostre quantos pedidos foram feitos por mês no ano de 2022 (caso você tenha registros neste ano, senão escolha um ano que você tenha cadastrado 
-
+select month(data_pedido) as 'Mês', count(month(data_pedido)) as 'Total de pedidos' 
+        from pedido group by month(data_pedido);
 
 -- Exercicio 9: Mostre quanto foi faturado por mês (leve em conta o valor total de cada pedido - novamente pense em GROUP BY e SUM).
-
+select month(data_pedido) as "Mês", sum(valor_final) 
+from pedido group by month(data_pedido);
 
 -- Exercicio 10: Mostre o valor total do estoque por departamento.
 	select departamento.nome, sum(produto.estoque * produto.preco) from departamento
